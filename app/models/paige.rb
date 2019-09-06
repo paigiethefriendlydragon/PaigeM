@@ -1,0 +1,3 @@
+class Paige < ApplicationRecord
+
+end
