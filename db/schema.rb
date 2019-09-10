@@ -10,13 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_06_160414) do
+ActiveRecord::Schema.define(version: 2019_09_06_203716) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "paiges", force: :cascade do |t|
+    t.string "name"
     t.text "bio"
+    t.string "video"
+    t.string "recording"
+    t.string "outside_source_link"
+    t.string "photos"
+    t.string "specialties"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,13 +37,6 @@ ActiveRecord::Schema.define(version: 2019_09_06_160414) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
-
-  create_table "videos", force: :cascade do |t|
-    t.string "link"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
