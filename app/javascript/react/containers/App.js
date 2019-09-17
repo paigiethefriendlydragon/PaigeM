@@ -5,8 +5,7 @@ import PaigeContainer from './PaigeContainer'
 export const App = (props) => {
   return (
     <Router history={browserHistory}>
-    <Route path='/paiges' component={PaigeContainer} />
-    <Route path='/paiges/:id' component={Component} />
+    <Route path='/paiges/:id' component={PaigeContainer} />
   </Router>)
 }
 
