@@ -7,5 +7,4 @@ class PaigesController < ApplicationController
     def show
       @paige = Paige.find(params[:id])
     end
-    
 end

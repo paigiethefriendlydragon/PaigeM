@@ -1,15 +1,1 @@
 
-<% @paiges.each do |paige| %>
-    <% if paige.id === 1 %>
-      <h2><%= link_to "About my music", paige_path(paige.id) %></h2>
-
-    <% else %>
-
-      <h2><%= link_to "About my web-development", paige_path(paige.id) %></h2>
-    <% end %>
-<% end %>
-
-
-<h1>
-  Paige Marie
-</h1>
